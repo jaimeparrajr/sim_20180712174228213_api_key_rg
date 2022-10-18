@@ -222,5 +222,6 @@ module.exports = function (grunt) {
     grunt.registerTask('dev-test', ['clean:coverage', 'copy:resourcesForInstrumented', 'instrument', 'mochaTest:server-side-spec']);
     grunt.registerTask('dev-test-cov', ['clean:coverage', 'copy:resourcesForInstrumented', 'instrument', 'mochaTest:server-side', 'storeCoverage', 'makeReport-lcov', 'makeReport']);
     grunt.registerTask('dev-uitest', ['mochaTest:fvt']);
+    console.log(grunt);
 
 };
