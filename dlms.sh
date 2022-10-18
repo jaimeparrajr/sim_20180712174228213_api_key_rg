@@ -138,4 +138,5 @@ if [[ -n $1 ]]; then
     tail -1 $1
 fi
 
+# Publish record to store
 curl -X POST --header "Content-Type: application/json" --header "Accept: text/plain" -d "${jsondoc}" "http://devops-datastore.stage1.mybluemix.net/v1/pub_message"
